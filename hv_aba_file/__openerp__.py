@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 {
     'name': 'ABA file',
     'version': '11.0.0.1.0',

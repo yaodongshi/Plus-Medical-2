@@ -1,1 +1,1 @@
-import payment_batch
+from . import payment_batch

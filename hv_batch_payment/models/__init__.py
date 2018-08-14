@@ -1,3 +1,3 @@
-import account_invoice
-import account_payment
-import account_payment_batch
+from . import account_invoice
+from . import account_payment
+from . import account_payment_batch

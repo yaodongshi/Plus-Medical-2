@@ -170,13 +170,11 @@ class AccountBatchPayment(models.Model):
             'res_name': self.name,
             'res_model': 'account.payment.batch',
             'res_id': self.id,
-            'datas': base64.b64encode(cotent_file),
+            'datas': base64.b64encode(cotent_file.encode()),
             'datas_fname': self.name + '.aba',
         }
         new_attachment = self.env['ir.attachment'].create(attachment_value)
         self.write({
             'attachment_ids': [(6, 0, [new_attachment.id])]
         })
-
-
 
