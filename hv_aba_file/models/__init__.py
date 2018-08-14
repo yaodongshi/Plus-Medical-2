@@ -1,0 +1,3 @@
+import res_bank
+import account_payment_batch
+import account_journal
